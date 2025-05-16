@@ -1,0 +1,130 @@
+/* LoginPage.module.css */
+
+.container {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.6);
+  border: 2px solid #00b7ff;
+  width: 400px;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 380px;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.loginButton {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.registerButton {
+  flex: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.githubButton {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logoutButton {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.hr {
+  margin: 1rem 0;
+  border-color: #333;
+}
+
+/* Hover Effects */
+.hoverNeon:hover {
+  border: 2px solid rgb(222, 251, 245);
+}
+.hoverNeonGreen:hover {
+  border: 2px solid rgb(222, 251, 245);
+}
+.hoverNeonBlue:hover {
+  border: 2px solid #66ccff;
+}
+.hoverNeonRed:hover {
+  border: 2px solid #ff6666;
+}
+
+/* Animation */
+.cardAnimateEnter {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease-out;
+}
+.cardAnimateEnterActive {
+  opacity: 1;
+  transform: translateX(0);
+}
