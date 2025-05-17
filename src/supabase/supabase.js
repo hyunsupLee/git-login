@@ -2,9 +2,7 @@ import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
-
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
 const redirectURI = "http://localhost:3000";
 
 //// Email login //////
@@ -24,7 +22,7 @@ export async function signEmail(email, password, execute) {
       console.log("로그인 성공!");
       const token = data.session.access_token;
       console.log("🔐 access_token:", token);
-      execute();
+      if (execute) execute();
       console.log("로그인 성공! execute");
     }
   } catch (err) {
